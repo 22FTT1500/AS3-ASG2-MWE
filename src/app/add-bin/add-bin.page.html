@@ -29,7 +29,35 @@
 </ion-card>
 
   <img src="assets/plus.png" style="width: 50px; height: 50px; margin: 0 auto; display: block; margin-top: 200px;">
-  <h1 style="text-align: center;">Add New Rubbish</h1>
+  <h1 style="text-align: center;"><a id="open-modal">Add New Rubbish</a></h1>
+
+  <!-- Modal Pop -->
+
+  <ion-modal #modal trigger="open-modal">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title>Add Rubbish Bin</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal.dismiss()">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Name of the Bin: </ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Verification code: </ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+          <br>
+          <ion-button  color="success" style="margin: 0 auto; display: block; width: 150px;" routerLink="/tab1" (click)="modal.dismiss()">Add</ion-button>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+        
 
 </ion-content>
 
