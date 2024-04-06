@@ -1,0 +1,7 @@
+{
+  "name": "AS3-ASG2-mwe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
