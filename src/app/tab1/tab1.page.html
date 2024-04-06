@@ -12,7 +12,7 @@
   <ion-text>
     <h2 style="padding-left: 20px ;">Prayer room Bin</h2>
   </ion-text>
-  <ion-button color="success" style="display: block; width: 150px; margin-left: 20px;" href="" >Change Bin</ion-button>
+  <ion-button color="success" style="display: block; width: 150px; margin-left: 20px;" id="open-bin">Change Bin</ion-button>
 
   <img src="assets/bin5percent.png" alt="" style="margin: 0 auto; display: block; margin-top: 25px;">
 
@@ -24,6 +24,85 @@
         </ion-toolbar>
         <h2 style="padding: 30px; text-align: center;">Bin level capacity is low 🤗</h2>
       </ion-card>
+
+      <ion-modal trigger="open-bin" [initialBreakpoint]="1" [breakpoints]="[1, 2]" color="success">
+        <ng-template>
+          
+            <ion-card>
+              <ion-card-content
+                style="display: flex; align-items: center; justify-content: space-between"
+              >
+                <div style="display: flex; align-items: center">
+                  <img
+        src="assets/smartbin.jpg"
+        style="width: 30px; height: 30px; margin-right: 15px;"
+      />
+                  <div
+                    style="display: flex; flex-direction: column; align-items: flex-start"
+                  >
+                    <p style="margin: 0">Living Room Bin</p>
+                  </div>
+                </div>
+              </ion-card-content>
+            </ion-card> 
+
+            <ion-card>
+              <ion-card-content
+                style="display: flex; align-items: center; justify-content: space-between"
+              >
+                <div style="display: flex; align-items: center">
+                  <img
+        src="assets/smartbin.jpg"
+        style="width: 30px; height: 30px; margin-right: 15px;"
+      />
+                  <div
+                    style="display: flex; flex-direction: column; align-items: flex-start"
+                  >
+                    <p style="margin: 0">Kitchen Bin</p>
+                  </div>
+                </div>
+              </ion-card-content>
+            </ion-card> 
+
+            <ion-card>
+              <ion-card-content
+                style="display: flex; align-items: center; justify-content: space-between"
+              >
+                <div style="display: flex; align-items: center">
+                  <img
+        src="assets/smartbin.jpg"
+        style="width: 30px; height: 30px; margin-right: 15px;"
+      />
+                  <div
+                    style="display: flex; flex-direction: column; align-items: flex-start"
+                  >
+                    <p style="margin: 0">Bedroom Bin</p>
+                  </div>
+                </div>
+              </ion-card-content>
+            </ion-card> 
+
+            <ion-card style="margin-bottom: 20px;">
+              <ion-card-content
+                style="display: flex; align-items: center; justify-content: space-between"
+              >
+                <div style="display: flex; align-items: center">
+                  <img
+        src="assets/smartbin.jpg"
+        style="width: 30px; height: 30px; margin-right: 15px;"
+      />
+                  <div
+                    style="display: flex; flex-direction: column; align-items: flex-start"
+                  >
+                    <p style="margin: 0">Prayer Room Bin</p>
+                  </div>
+                </div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </ion-card-content>
+            </ion-card> 
+         
+        </ng-template>
+      </ion-modal>
     
 
 </ion-content>
