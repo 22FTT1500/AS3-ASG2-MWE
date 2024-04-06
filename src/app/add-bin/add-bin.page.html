@@ -5,19 +5,32 @@
 
 <ion-content [fullscreen]="true">
 <ion-text>
-  <h2>My Rubbish Bins</h2>
+  <h2 style="padding-left: 20px ;">My Rubbish Bins</h2>
 </ion-text>
 
 <ion-card>
-  <ion-card-header>
-    <ion-card-title>Living room bin</ion-card-title>
-    <ion-img src="assets/smartbin.jpg" ></ion-img>
-  </ion-card-header>
-
-  <ion-card-content>
-    succesfully connected 
+  <ion-card-content
+    style="display: flex; align-items: center; justify-content: space-between"
+  >
+    <div style="display: flex; align-items: center">
+      <img
+        src="assets/smartbin.jpg"
+        style="width: 100px; height: 100px"
+      />
+      <div
+        style="display: flex; flex-direction: column; align-items: flex-start"
+      >
+        <p style="margin: 0">Living Room Bin</p>
+        <p style="margin: 0">succesfully connected </p>
+      </div>
+    </div>
+    <ion-icon name="checkmark-circle"></ion-icon>
   </ion-card-content>
 </ion-card>
+
+  <img src="assets/plus.png" style="width: 50px; height: 50px; margin: 0 auto; display: block; margin-top: 200px;">
+  <h1 style="text-align: center;">Add New Rubbish</h1>
+
 </ion-content>
 
 <ion-footer>
