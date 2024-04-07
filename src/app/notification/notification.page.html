@@ -1,13 +1,26 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>notification</ion-title>
+<ion-header>
+  <ion-toolbar color="success">
+    <h2>BinRadar</h2>
+    <ion-icon slot="end" name="notifications" style="width: 40px; height: 40px"></ion-icon>
   </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">notification</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <ion-text>
+    <h2 style="padding-left: 20px ;">Notification</h2>
+  </ion-text>
+
+<ion-card style="background-color: #81C975;">
+  <ion-card-content style="display: flex; align-items: center; justify-content: space-between">
+  <div style="display: flex; align-items: center">
+    <ion-icon name="trash-bin-outline"></ion-icon>
+    <div style="display: flex; flex-direction: column; align-items: flex-start"
+ >
+      <p style="margin: 0">Kitchen Bin is Full</p>
+      <p style="margin: 0">14/02/2024 10:30 AM </p>
+    </div>
+  </div>
+</ion-card-content>
+</ion-card>
+ 
 </ion-content>
