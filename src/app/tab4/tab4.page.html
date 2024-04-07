@@ -35,9 +35,9 @@
       style="display: flex; align-items: center; justify-content: space-between"
     >
       <div style="display: flex; align-items: center">
-        <h2 style="margin: 0; color: white">Name</h2>
+        <h2 style="margin: 0; color: white" >Name</h2>
       </div>
-      <p style="margin: 0; font-size: 20px; color: white">Lala02 ></p>
+      <p style="margin: 0; font-size: 20px; color: white" (click)="setOpen(true)">Lala02 ></p>
     </ion-card-content>
     <ion-card-content
       style="display: flex; align-items: center; justify-content: space-between"
@@ -62,6 +62,32 @@
       </p>
     </ion-card-content>
   </ion-card>
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Name</ion-title>
+          <ion-buttons slot="start">
+            <ion-button (click)="setOpen(false)">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content >
+        <ion-card color="success">
+          <ion-card-content
+            style="display: flex; align-items: center; justify-content: space-between"
+          >
+            <div style="display: flex; align-items: center">
+              <h2 style="margin: 0; color: white">Name</h2>
+            </div>
+            <ion-icon name="close-circle"></ion-icon>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>
   
 
