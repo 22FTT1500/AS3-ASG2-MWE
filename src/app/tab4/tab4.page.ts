@@ -10,6 +10,8 @@ export class Tab4Page implements OnInit {
   setOpen(isOpen: boolean) {
     this.isModalOpen = isOpen;
   }
+
+  
   constructor() { }
 
   ngOnInit() {
