@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'changepassword',
     loadChildren: () => import('./changepassword/changepassword.module').then( m => m.ChangepasswordPageModule)
+  },
+  {
+    path: 'refresh',
+    loadChildren: () => import('./refresh/refresh.module').then( m => m.RefreshPageModule)
   }
 
 
