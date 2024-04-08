@@ -8,7 +8,7 @@ push the code of the ionic framework into the repository and commit
 navigate to the Project Directory: 
 cd AS3-ASG2-Mwe
 cmd ionic serve 
-open web broweser and navigate to the localhost 
+open web browser and navigate to the localhost 
 
 # Usage Instructions 
 Add Bin:
