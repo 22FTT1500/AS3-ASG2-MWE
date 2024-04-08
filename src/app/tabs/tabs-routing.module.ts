@@ -24,6 +24,10 @@ const routes: Routes = [
         loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
       },
       {
+        path: 'refresh',
+        loadChildren: () => import('../refresh/refresh.module').then( m => m.RefreshPageModule)
+      },
+      {
 
         path: '',
         redirectTo: '/tabs/tab1',
